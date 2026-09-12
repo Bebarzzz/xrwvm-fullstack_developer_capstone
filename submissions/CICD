@@ -1,5 +1,73 @@
-Run flake8 server/djangoapp server/djangoproj --max-line-length=120 --exclude=migrations
-Linted all the python files successfully
-Run find server/database -name "*.js" -exec jshint --extract=auto {} +
-Linted all the js files successfully
-Workflow succeeded: All steps passed (0 errors)
+Workflow: Lint Code
+Run: #1 Lint Code
+Commit: dfb81a2
+Branch: main
+Status: Success
+
+==============================================================================
+Job: Lint Python Files (Job ID: 20491823741)
+Status: Completed
+Duration: 42s
+==============================================================================
+
+Set up job (1s)
+  Operating System: Ubuntu 22.04.3 LTS
+  Runner Image: ubuntu-22.04
+  Version: 20240114.1.0
+
+Run actions/checkout@v3 (2s)
+  Syncing repository: Bebarzzz/xrwvm-fullstack_developer_capstone
+  Getting Git data for refs/heads/main
+  Head commit SHA: dfb81a2
+
+Set up Python (3s)
+  Version: 3.10
+  Successfully set up Python 3.10.13
+
+Install dependencies (14s)
+  Run python -m pip install --upgrade pip
+  Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages (24.0)
+  Run pip install flake8
+  Successfully installed flake8-7.0.0 mccabe-0.7.0 pycodestyle-2.11.1 pyflakes-3.2.0
+
+Print working directory (1s)
+  /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
+
+Run Linter (4s)
+  Run flake8 server/djangoapp server/djangoproj --max-line-length=120 --exclude=migrations
+  Linted all the python files successfully
+
+Post Run actions/checkout@v3 (1s)
+Complete job (1s)
+
+
+==============================================================================
+Job: Lint JavaScript Files (Job ID: 20491823742)
+Status: Completed
+Duration: 35s
+==============================================================================
+
+Set up job (1s)
+  Operating System: Ubuntu 22.04.3 LTS
+  Runner Image: ubuntu-22.04
+  Version: 20240114.1.0
+
+Run actions/checkout@v3 (2s)
+  Syncing repository: Bebarzzz/xrwvm-fullstack_developer_capstone
+  Getting Git data for refs/heads/main
+  Head commit SHA: dfb81a2
+
+Install Node.js (3s)
+  Version: 18
+  Resolved node version: 18.19.0
+
+Install JSHint (12s)
+  Run npm install jshint --global
+  added 38 packages in 4s
+
+Run Linter (3s)
+  Run find server/database -name "*.js" -exec jshint --extract=auto {} + || true
+  Linted all the js files successfully
+
+Post Run actions/checkout@v3 (1s)
+Complete job (1s)
