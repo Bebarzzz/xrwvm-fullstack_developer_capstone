@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Dealerships</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -25,44 +31,52 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  <div class="card" style="width: 85%; margin: auto; margin-top: 3%; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 12px;">
+    <div class="banner text-center" name="about-header" style="margin-bottom: 30px;">
+      <h1 style="color: #0b5351; font-weight: bold;">About Our Dealership Network</h1>
+      <p style="font-size: 1.15rem; color: #495057; max-width: 800px; margin: 15px auto;">
+        Welcome to America's leading centralized car dealership network. We connect customers nationwide with trusted, high-quality local branches. Our mission is to make vehicle purchasing and servicing transparent, reliable, and delightful through verified customer reviews and certified excellence.
+      </p>
     </div>
     
-</div>
+    <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+      <div class="card text-center" style="width: 30%; min-width: 250px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <img class="card-img-top" src="/static/person.png" alt="Sarah Jenkins - CEO" style="width: 140px; margin: 20px auto 10px auto;">
+        <div class="card-body">
+          <h4 class="title" style="font-weight: bold; color: #333;">Sarah Jenkins</h4>
+          <p class="text-primary font-weight-bold" style="font-weight: 600;">Chief Executive Officer & Founder</p>
+          <p class="card-text" style="color: #666; font-size: 0.95rem;">
+            Over 20 years driving automotive retail transformation. Committed to customer-centric innovation and transparent pricing.
+          </p>
+          <p><a href="mailto:sarah.jenkins@dealerships.com" style="color: darkturquoise; font-weight: 500;">sarah.jenkins@dealerships.com</a></p>
+        </div>
+      </div>
 
+      <div class="card text-center" style="width: 30%; min-width: 250px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <img class="card-img-top" src="/static/person.png" alt="David Rodriguez - VP Customer Experience" style="width: 140px; margin: 20px auto 10px auto;">
+        <div class="card-body">
+          <h4 class="title" style="font-weight: bold; color: #333;">David Rodriguez</h4>
+          <p class="text-primary font-weight-bold" style="font-weight: 600;">VP of Customer Experience</p>
+          <p class="card-text" style="color: #666; font-size: 0.95rem;">
+            Pioneered our national sentiment-powered review verification system to guarantee transparency and service reliability.
+          </p>
+          <p><a href="mailto:david.rodriguez@dealerships.com" style="color: darkturquoise; font-weight: 500;">david.rodriguez@dealerships.com</a></p>
+        </div>
+      </div>
+
+      <div class="card text-center" style="width: 30%; min-width: 250px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <img class="card-img-top" src="/static/person.png" alt="Emily Chen - Director of Automotive Quality" style="width: 140px; margin: 20px auto 10px auto;">
+        <div class="card-body">
+          <h4 class="title" style="font-weight: bold; color: #333;">Emily Chen</h4>
+          <p class="text-primary font-weight-bold" style="font-weight: 600;">Director of Quality & Inspection</p>
+          <p class="card-text" style="color: #666; font-size: 0.95rem;">
+            Ensures that every pre-owned and new vehicle in our nationwide network passes rigorous multi-point mechanical inspections.
+          </p>
+          <p><a href="mailto:emily.chen@dealerships.com" style="color: darkturquoise; font-weight: 500;">emily.chen@dealerships.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>

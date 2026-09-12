@@ -1,0 +1,5 @@
+Run flake8 server/djangoapp server/djangoproj --max-line-length=120 --exclude=migrations
+Linted all the python files successfully
+Run find server/database -name "*.js" -exec jshint --extract=auto {} +
+Linted all the js files successfully
+Workflow succeeded: All steps passed (0 errors)
